@@ -1,127 +1,60 @@
-/* Reset das configurações padrão de cada navegador */
-*{
-    box-sizing: border-box;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
 }
 
-/* Header */
-body > header {
-    background-color: #2f3640;
-    padding: 16px 0;
-    color: #f5f6fa;
-}
-
-header .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-header li {
-    display: inline;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    margin-left: 16px;
-}
-
-header li a {
-    color: #f5f6fa;
-    text-decoration: none;
-}
-
-/* Containers, Artigos e Sections */
 .container {
-    width: 1366px;
-    margin: 0 auto;
-}
-
-.articles {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.articles article img {
-    /*height: 180px;*/
+    margin: 80px auto;
+    max-width: 640px;
     width: 100%;
 }
 
-.articles article {
-    width: 30%;
+form {
+    margin-top: 40px;
 }
 
-/* Sections */
-section {
-    padding: 16px 0; 
-}
-
-section h2,
-.articles article {
-    margin-bottom: 16px;
-}
-
-section h2 {
-    font-size: 32px;
-}
-
-.articles article h3 {
-    margin-top: 8px;
-    margin-bottom: 8px;
-    font-size: 24px;
-}
-
-.articles article a {
-    color: #fff;
+input, button {
+    display: block;
     padding: 8px;
-    display: inline-block;
-    border-radius: 5%;
-    text-decoration: none;
+    margin-bottom: 8px;
+    width: 100%;
+    resize: none;
+}
+
+button {
+    background-color: green;
+    border: none;
+    text-transform: uppercase;
+    color: #fff;
     font-weight: bold;
-    margin-top: 8px;
+    font-size: 18px;
+    cursor: pointer;
 }
 
-.articles article a:hover {
-    text-decoration: underline;
+button:hover {
+    background-color: #27ae71;
 }
 
-.articles article p, 
-.articles article a {
-    font-family: Arial, Helvetica, sans-serif;
+.success-message {
+    background-color: #27ae60;
+    padding: 16px;
+    color: #fff;
+    display: none;
 }
 
-/* Section Sports */
-#sports {
-    background-color: rgba(0, 255, 0, 0.1);
+.error-message {
+    font-size: 12px;
+    padding: 8px;
+    background-color: red;
+    color: #fff;
+    margin-bottom: 8px;
+    display: none;
 }
 
-#sports .articles article a {
-    background-color: #009432;
-}
-
-/* Section Economy */
-#economy {
-    background-color: #f8f59f;
-}
-
-#economy .articles article a {
-    background-color: #ff9f1a;
-}
-
-/* Section Entertainment */
-#entertainment {
-    background-color: #ff8480;
-}
-
-#entertainment .articles article a {
-    background-color: #ff0202;
-}
-
-/* Section Technology */
-#technology {
-    background-color: #8fbcff;
-}
-
-#technology .articles article a {
-    background-color: #0059ff;
+input.error {
+    color: red;
+    border-color: red;
+    outline-color: red;
 }
