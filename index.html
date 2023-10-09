@@ -1,27 +1,35 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tarefa Integrando HTML com JavaScript</title>
 
-    <link rel="stylesheet" href="./main.css">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tarefa Módulo jQuery</title>
+
+  <!-- Configuração da Fonte usada na página -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Css próprio -->
+  <link rel="stylesheet" href="./main.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Tarefa Integrando HTML com JavaScript:</h1>
+  <h1>Lista de Tarefas</h1>
+  <form>
+    <input id="tarefa-cadastro" type="text" required placeholder="Nome da Tarefa">
+    <button type="submit">Cadastrar</button>
+  </form>
 
-        <form id="form-number">
-            <label for="numberA">Campo A:</label>
-            <input id="numberA" type="number" required placeholder="Digite um número:">
-            <p><</p>
-            <label for="numberB">Campo B:</label>
-            <input id="numberB" type="number" required placeholder="Digite outro número:">
-            <p class="error-message"></p>
-            <button id="btn-number" type="submit">Enviar</button>
-        </form> 
-        <p class="success-message"></p>    
-    </div>
-    <script src="./main.js"></script>
+  <div class="lista-tarefas">
+    <h2>Lista de Tarefas Cadastradas:</h2>
+    <ul>
+      <!-- será adicionado os itens que o usuário cadastrar -->
+    </ul>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="./main.js"></script>
 </body>
 </html>
