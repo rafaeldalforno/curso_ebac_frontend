@@ -3,63 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário de Cadastro</title>
+    <title>Tarefa Bootstrap - Formulário de Cadastro</title>
 
-    <!-- Fonte do Google -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- CDN Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
 
-    <!-- CSS próprio -->
-    <link rel="stylesheet" href="./css/main.css">
+    <style>
+        h1 {
+            margin: 16px 0;
+            text-align: center;
+        }
+
+        form input {
+            margin-bottom: 22px;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Formulário de Cadastro</h1>
-        </div>
-    </header>
-
     <div class="container">
+        <h1>Formulário de Cadastro</h1>
+
         <form>
-            <div class="form-campo">
-                <label for="nome">Nome Completo:</label>
-                <input id="nome" type="text" name="nome">
-            </div>
-            <div class="form-campo">
-                <label for="email">Email:</label>
-                <input id="email" type="email" name="email">
-            </div>
-            <div class="form-campo">
-                <label for="telefone">Telefone:</label>
-                <input id="telefone" type="tel" name="telefone">
-            </div>
-            <div class="form-campo">
-                <label for="cpf">CPF:</label>
-                <input id="cpf" type="text" name="cpf">
-            </div>
-            <div class="form-campo">
-                <label for="endereco">Endereço Completo:</label>
-                <input id="endereco" type="text" name="endereco">
-            </div>
-            <div class="form-campo">
-                <label for="cep">CEP:</label>
-                <input id="cep" type="text" name="cep">
-            </div>
-            <div class="botoes">
-                <button id="cadastrar" type="submit">Cadastrar</button>
-                <button id="limpar" type="reset">Limpar</button>
-            </div>
+            <label class="form-label" for="nome">Nome:</label>
+            <input class="form-control" id="nome" type="text">
+
+            <label class="form-label" for="email">E-mail:</label>
+            <input class="form-control" id="email" type="email">
+
+            <label class="form-label" for="telefone">Telefone:</label>
+            <input class="form-control" id="telefone" type="tel">
+
+            <button class="btn btn-success ">Enviar</button>
         </form>
     </div>
-
-
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    
-    <script src="./js/jquery.mask.min.js"></script>
-    <script src="./js/jquery.validate.min.js"></script>
-    <script src="./js/messages_pt_BR.min.js"></script>
-    <script src="./js/main.js"></script>
 </body>
 </html>
