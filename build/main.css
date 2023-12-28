@@ -27,6 +27,7 @@ header .container {
 }
 .menu li a {
   color: #fff;
+  text-decoration: none;
 }
 
 .products {
