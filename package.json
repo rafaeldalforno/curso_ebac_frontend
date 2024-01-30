@@ -1,23 +1,19 @@
 {
-  "name": "curso_ebac_frontend",
+  "name": "tarefa_modulo_gulp",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass source/main.scss build/main.css --watch",
+    "gulp": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/rafaeldalforno/curso_ebac_frontend.git"
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/rafaeldalforno/curso_ebac_frontend/issues"
-  },
-  "homepage": "https://github.com/rafaeldalforno/curso_ebac_frontend#readme",
   "devDependencies": {
-    "sass": "^1.69.5"
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.2",
+    "sass": "^1.70.0"
   }
 }
