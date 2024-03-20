@@ -1,8 +1,5 @@
 @import "mapas.less";
 
-@breakpointMobile: ~"(max-width: 767px)";
-@breakpointTablet: ~"(min-width: 768px) and (max-width: 1023px)";
-
 * {
     margin: 0;
     padding: 0;
@@ -10,100 +7,98 @@
     font-family: "Roboto", sans-serif;
 }
 
-body{
+body {
     background-color: #colors[backgroundColor];
+    color: #colors[textColor];
+    padding-top: 100px;
 }
 
-li{
-    list-style: none;
+/* Estilização do Header */
+header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+
+    img {
+        height: 36px;
+        margin-right: 16px;
+    }
+
+    h1 {
+        font-size: 40px;
+        font-weight: bold;
+    }
 }
 
 .container {
-    max-width: 1024px;
+    max-width: 960px;
     width: 100%;
     margin: 0 auto;
-
-    @media @breakpointTablet{
-        max-width: 80%;
-    }
-
-    @media @breakpointMobile{
-        max-width: 80%;
-    }
 }
 
-header{
-    background-color: #colors[bgHeader];
-    position: sticky;
-    top: 0;
-    left: 0;
-
-    .container{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 16px 0;
-    }
-}
-
-.menu{
+/* Estilização do Formulário */
+form {
     display: flex;
+    max-width: 640px;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 56px;
 
-    li{
+
+    input {
+        font-size: 24px;
+        background-color: #colors[inputBackgroundColor];
+        border: none;
+        border-bottom: 2px solid #colors[borderColor];
+        padding: 8px;
+    }
+
+    button {
+        background-color: #colors[buttonBackgroundColor];
+        color: #colors[buttonTextColor];
+        font-size: 24px;
         font-weight: bold;
-        margin-left: 24px;
-    }
-
-    li a{
-        color: #colors[linkButtonColor];
-        text-decoration: none;
+        border: none;
+        cursor: pointer;
+        padding: 8px;
     }
 }
 
-section{
-    padding: 56px 0;
-}
-
-.products{
-    margin-top: 40px;
-    display: grid;
-    grid-template-columns: repeat(3, 32.66%);
-    column-gap: 1%;
-    row-gap: 4%;
+/* Estilizando a Tabela */ 
+table {
     width: 100%;
 
-    @media @breakpointTablet{
-        grid-template-columns: repeat(2, 48.5%);
-        column-gap: 3%;
+    th {
+        border-bottom: 2px solid #colors[borderColor];
+        padding: 16px;
+        font-size: 24px;
+        font-weight: bold;
     }
 
-    @media @breakpointMobile{
-        display: block;
-    }
-}
+    td {
+        padding: 16px 0;
+        text-align: center;
+        font-size: 18px;
+        border-bottom: 1px solid #colors[tableBorderBottom];
 
-.product-item{
-    img{
-        width: 100%;
-        border-radius: 16px;
-    }
-
-    @media @breakpointMobile{
-        margin-bottom: 32px;
+        img {
+            width: 30px;
+        }
     }
 }
 
-.product-button{
-    display: block;
-    background-color: #colors[bgButton];
-    color: #colors[linkButtonColor];
-    text-align: center;
-    padding: 8px 0;
-    border-radius: 8px;
-    margin-top: 8px;
-    text-decoration: none;
+.resultado {
+    padding: 8px;
+    font-weight: bold;
+    color: #colors[resultadoTextColor];
+    background-color: #colors[resultadoBackground];
+    border-radius: 3px;
+}
 
-    &:hover{
-        background-color: #colors[buttonHover];
-    }
+.aprovado {
+    background-color: #colors[aprovadoColor];
+}
+
+.reprovado {
+    background-color: #colors[reprovadoColor];
 }

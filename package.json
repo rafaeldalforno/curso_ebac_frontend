@@ -2,8 +2,10 @@
   "name": "curso_ebac_frontend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "Gruntfile.js",
   "scripts": {
+    "grunt": "grunt",
+    "build": "grunt build",
     "less": "less-watch-compiler ./src/styles ./build/styles main.less",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,6 +20,10 @@
   },
   "homepage": "https://github.com/rafaeldalforno/curso_ebac_frontend#readme",
   "devDependencies": {
+    "grunt": "^1.6.1",
+    "grunt-contrib-less": "^3.0.0",
+    "grunt-contrib-uglify": "^5.2.2",
+    "grunt-replace": "^2.0.2",
     "less": "^4.2.0",
     "less-watch-compiler": "^1.16.3"
   }
